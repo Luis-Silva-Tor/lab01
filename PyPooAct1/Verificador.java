@@ -4,7 +4,7 @@ public class Verificador {
         return !(a.getEsquina2().getX() <= b.getEsquina1().getX() ||  // A la izquierda
                  a.getEsquina1().getX() >= b.getEsquina2().getX() ||  // A la derecha
                  a.getEsquina2().getY() <= b.getEsquina1().getY() ||  // Debajo
-                 a.getEsquina1().getY() >= b.getEsquina2().getY());   // Encima
+                 a.getEsquina1().getY() >= b.getEsquina2().getY());   // Encima  todo del plano cartesiano
     }
 
     // Método para verificar si los rectángulos se tocan pero no se sobreponen

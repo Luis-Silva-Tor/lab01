@@ -4,14 +4,14 @@ public class Principal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Leer coordenadas del primer rectángulo
+        // Primera parte para leer desde el comienzo del codigo
         System.out.print("Ingrese una esquina del 1er rectángulo: ");
         Coordenada c1 = new Coordenada(scanner.nextDouble(), scanner.nextDouble());
 
         System.out.print("Ingrese la esquina opuesta del 1er rectángulo: ");
         Coordenada c2 = new Coordenada(scanner.nextDouble(), scanner.nextDouble());
 
-        // Crear el primer rectángulo
+        // En esta parte se crea el primer rectangulo
         Rectangulo rectA = new Rectangulo(c1, c2);
 
         // Leer coordenadas del segundo rectángulo
@@ -21,10 +21,10 @@ public class Principal {
         System.out.print("Ingrese la esquina opuesta del 2do rectángulo: ");
         Coordenada c4 = new Coordenada(scanner.nextDouble(), scanner.nextDouble());
 
-        // Crear el segundo rectángulo
+        // Se crea el segundo rectangulo 
         Rectangulo rectB = new Rectangulo(c3, c4);
 
-        // Imprimir los rectángulos
+        // Imprimir los rectángulos de las esquinas 
         System.out.println(rectA);
         System.out.println(rectB);
 
@@ -51,6 +51,6 @@ public class Principal {
         if (xDer > xIzq && ySup > yInf) {
             return (xDer - xIzq) * (ySup - yInf);
         }
-        return 0; // No hay sobreposición
+        return 0; // en esta parte retornara cuando no haya sobreposicion 
     }
 }

@@ -2,19 +2,19 @@ public class Coordenada {
     private double x;
     private double y;
 
-    // Constructor por defecto (x=0, y=0)
+    // Constructor para poner las cordenadas  (x=0, y=0)
     public Coordenada() {
         this.x = 0;
         this.y = 0;
     }
 
-    // Constructor con parámetros
+    // Constructor para los parametros
     public Coordenada(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    // Constructor copia
+    // Constructor para las cordenas x,y
     public Coordenada(Coordenada c) {
         this.x = c.x;
         this.y = c.y;
